@@ -1,0 +1,86 @@
+{
+  "rooms": [
+    {
+      "id": "sakuraCenter",
+      "name": "Sakura Town Square",
+      "borders": {
+        "north": "sakuraCastle",
+        "west": "sakuraWestWing",
+        "east": "sakuraEastWing",
+        "south": "sakuraSouthWing"
+      }
+    },
+    {
+      "id": "sakuraCastle",
+      "name": "Sakura Castle",
+      "borders": {
+        "south": "sakuraCenter"
+      }
+    },
+    {
+      "id": "sakuraWestWing",
+      "name": "Sakura Town - West",
+      "borders": {
+        "west": "sakuraForestWest",
+        "east": "sakuraCenter"
+      }
+    },
+    {
+      "id": "sakuraEastWing",
+      "name": "Sakura Town - East",
+      "borders": {
+        "west": "sakuraCenter",
+        "east": "sakuraForestEast"
+      }
+    },
+    {
+      "id": "sakuraSouthWing",
+      "name": "Sakura Town - South",
+      "borders": {
+        "north": "sakuraCenter",
+        "south": "sakuraForestSouth"
+      }
+    },
+    {
+      "id": "sakuraForestSouth",
+      "name": "Sakura Forest",
+      "borders": {
+        "north": "sakuraSouthWing",
+        "east": "sakuraForestSouthEast",
+        "west": "sakuraForestSouthWest"
+      }
+    },
+    {
+      "id": "sakuraForestEast",
+      "name": "Sakura Forest",
+      "borders": {
+        "west": "sakuraEastWing",
+        "south": "sakuraForestSouthEast"
+      }
+    },
+    {
+      "id": "sakuraForestWest",
+      "name": "Sakura Forest",
+      "borders": {
+        "east": "sakuraWestWing",
+        "south": "sakuraForestSouthEast"
+      }
+    },
+    {
+      "id": "sakuraForestSouthEast",
+      "name": "Sakura Forest",
+      "borders": {
+        "north": "sakuraForestEast",
+        "west": "sakuraForestSouth"
+      }
+    },
+    {
+      "id": "sakuraForestSouthWest",
+      "name": "Sakura Forest",
+      "borders": {
+        "north": "sakuraForestWest",
+        "east": "sakuraForestSouth"
+      }
+    }
+  ]
+}
