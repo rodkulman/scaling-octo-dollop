@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace Rodkulman.WarEternal.Server
@@ -33,13 +34,23 @@ namespace Rodkulman.WarEternal.Server
             }
         }
 
-        public static string CriptographyKey
+        public static byte[] CriptographyKey
         {
             get
             {
                 LoadFile();
 
-                return settingsFile.Value<string>("CriptographyKey");
+                return settingsFile.Values<byte>("CriptographyKey").ToArray();
+            }
+        }
+
+        public static byte[] CriptographyIV
+        {
+            get
+            {
+                LoadFile();
+
+                return settingsFile.Values<byte>("CriptographyIV").ToArray();
             }
         }
     }
